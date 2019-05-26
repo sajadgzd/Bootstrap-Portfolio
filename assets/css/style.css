@@ -1,205 +1,341 @@
-/* to avoid confusion when setting width and height with padding and margin */
-
-* {
-    box-sizing: border-box;
-}
+/***************************************
+	  Shared CSS across Entire Site
+****************************************/
 
 body {
-    color: #777777;
-    line-height: 200%;
-    text-align: left;
     background-image: url("../images/concrete_seamless.png");
-}
-
-.masterhead {
-    margin: 0;
-    margin-bottom: 20px;
-    width: 100%;
-    background-color: #ffffff;
-    height: 90px;
-    border-bottom: 2px solid #cccccc;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 990px;
-    padding-left: 0px;
-}
-
-
-/* .headrow {
-    width: 960px;
-} */
-
-header {
-    background-color: #4aaaa5;
-    border-bottom: none;
-    color: #ffffff;
     height: 100%;
-    width: 270px;
-    margin-bottom: 0;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    vertical-align: middle;
-    padding-top: 15px;
-    padding-bottom: 10px;
 }
 
-h2 {
-    color: #4aaaa5;
-    border-bottom: 3px solid #dddddd;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    margin-top: 2px;
-    padding-bottom: 27px;
-    padding-top: 10px;
-    font-size: 30px;
-    font-weight: bolder;
-    margin-bottom: 24px;
-}
-
-nav {
-    position: relative;
-    /* right: -250px; */
-    text-align: center;
-    margin-top: 15px;
-    color: #4aaaa5;
-}
-
-.bar {
-    background-color: #ffffff;
-    border-bottom: 2px solid #cccccc;
+.container {
+    height: 100%;
 }
 
 a {
     color: #777777;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #777777;
 }
 
 a:hover {
-    color: #4aaabb;
+    color: #4c4b4b;
+    text-decoration: none;
 }
 
-.mastermain {
-    margin: 0 auto;
-    width: 960px;
-    height: auto;
-    background-color: #ffffff;
-    float: left;
+.navbar-toggle .icon-bar {
+    width: 30px;
+    height: 1px;
+}
+
+.navbar-header {
+    text-align: center;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.navbar-header span {
+    padding: 2px;
+    font-size: 1.05em;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default {
+    background-color: #4aaaa5;
+    border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-size: 2.0em;
+    text-align: center;
+    padding: 15px 50px;
+    float: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+#connect {
+    margin: 35px 13% 35px 13%;
+    height: 160px;
+    background: #fff;
+    text-align: center;
+}
+
+#connect h3 {
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 15px 0px 0px 15px;
+    color: #4aaaa5;
+}
+
+#connect hr {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#connect img {
+    margin: 0px 3px 0px 3px;
+    height: 54px;
+}
+
+#footer {
+    background: #666666;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    color: #fff;
+    border-top: 2px solid #4aaaa5;
+}
+
+
+/***************************************
+		       INDEX.HTML
+****************************************/
+
+#about {
+    margin: 15px 13% 35px 13%;
+    background: #fff;
+}
+
+#about h2 {
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 15px 0px 0px 15px;
+    color: #4aaaa5;
+}
+
+#about hr {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#about img {
+    width: 85%;
+    height: 85%;
+    margin: 10px 7.5% 0px 7.5%;
+}
+
+#about p {
+    line-height: 150%;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+
+/***************************************
+		      PORTFOLIO.HTML
+****************************************/
+
+ul {
+    padding: 0px;
+}
+
+#portfolio {
+    margin: 35px 13% 35px 13%;
+    background: #fff;
+    overflow: auto;
+}
+
+#portfolio h2 {
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 0px 0px 0px 15px;
+    color: #4aaaa5;
+}
+
+#portfolio hr {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#portfolio li {
+    list-style: none;
+    width: 90%;
+    height: 200px;
+    margin: 15px 5% 20px 5%;
+}
+
+#portfolio img {
+    width: 100%;
+    height: 100%;
+}
+
+.portLabel {
+    color: #fff;
+    background-color: #4aaaa5;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 53px;
+}
+
+
+/***************************************
+		      CONTACT.HTML
+****************************************/
+
+#contact {
+    margin: 35px 13% 35px 13%;
+    background: #fff;
+}
+
+#contact h2 {
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 15px 0px 0px 15px;
+    color: #4aaaa5;
+}
+
+#contact hr {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#contact form {
+    margin-left: 15px;
     color: #777777;
-    border: 2px solid #dddddd;
-    margin-bottom: 30px;
 }
 
-input,
-textarea {
-    width: 100%;
-    padding: 10px 20px 10px 10px;
-    margin: 8px 0;
-    border-color: #dddddd;
-    border-style: solid;
-    border-width: thin;
+#contact form input {
+    color: #777777;
+    width: 97%;
+    margin-bottom: 10px;
+    margin-top: 3px;
 }
 
-.mainrow {
-    clear: both;
-    margin: 0 auto;
-    width: auto;
-    padding: 20px;
-    margin-bottom: 20px;
+#contact span {
+    font-size: 1.1em;
 }
 
-footer {
-    clear: both;
-    margin: 0 auto;
-    vertical-align: middle;
-    padding: 18px;
-    background-color: #666666;
-    width: 100vw;
-    border-bottom: none;
-    color: #ffffff;
-    text-align: center;
-    font-size: 0.7em;
-    border-top: 5px solid #4aaaa5;
-    height: 50px;
-}
-
-.box {
-    display: inline-block;
-    width: 300px;
-    height: 200px;
-    margin: 30px;
-}
-
-.project {
-    float: left;
-    position: relative;
-    top: -10px;
-    width: 100%;
-}
-
-.project-title {
-    float: left;
-    position: relative;
-    top: -50px;
-    width: 100%;
+#name {
     height: 30px;
-    background-color: #4aaaa5;
-    color: #ffffff;
-    text-align: center;
+    margin-bottom: 5px;
 }
 
-.btn {
-    background-color: #4aaaa5;
-    color: #ffffff;
-    width: 100px;
-    height: 40px;
-    font-size: 16px;
+#name[type=text] {
+    padding-left: 5px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+#email[type=text] {
+    padding-left: 5px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+#message[type=text] {
+    line-height: 0px;
+}
+
+#email {
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+#message {
+    height: 185px;
+    margin-bottom: 10px;
+}
+
+#submit[type=submit] {
+    color: #fff;
+    width: 70px;
+    height: 30px;
+    background: #4aaaa5;
     border: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 2px;
+    font-size: 13px;
 }
 
-.btn:hover {
-    background-color: #334422;
+#submit:hover {
+    cursor: pointer;
+    background-color: #3a8783;
 }
 
-#main-bio,
-#contact-form,
-#project-portfolio {
-    position: relative;
-    text-align: left;
-    top: 30px;
-    margin-bottom: 50px;
+
+/***************************************
+		      RESPONSIVE
+****************************************/
+
+@media (min-width: 560px) {
+    /*TABLET*/
+    #about {
+        margin: 15px 0% 15px 10%;
+        width: 80%;
+    }
+    #about img {
+        width: 45%;
+        ;
+        margin: 5px 18px 20px 18px;
+        float: left;
+    }
+    #about p {
+        padding: 0px;
+    }
+    #connect {
+        width: 80%;
+        margin: 15px 0% 15px 10%;
+        height: 160px;
+    }
+    #connect h3 {
+        padding: 0px 0px 0px 15px;
+    }
+    #contact {
+        margin: 15px 0% 15px 10%;
+        width: 80%;
+    }
+    #portfolio {
+        margin: 15px 0% 15px 10%;
+        width: 80%;
+    }
+    #portfolio li {
+        width: 45%;
+        margin: 10px 0px 10px 20px;
+        float: left;
+    }
+    #footer {
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 5px;
+    }
 }
 
-.bio-img {
-    clear: both;
-    float: left;
-    margin-right: 20px;
-    width: 200px;
-    height: 200px;
-}
 
-#contact-form {
-    padding: 20px;
-    height: auto;
-    width: 960px;
-}
+/*DESKTOP*/
 
-#project-portfolio {
-    padding: 15px;
-    height: auto;
-}
-
-footer {
-    clear: both;
-    margin: 0 auto;
-    padding: 18px;
-    background-color: #666666;
-    width: 100vw;
-    border-bottom: none;
-    color: #ffffff;
-    text-align: center;
-    font-size: 0.7em;
-    border-top: 5px solid #4aaaa5;
-    height: 50px;
+@media (min-width: 992px) {
+    #about {
+        margin: 15px -6% 60px 10%;
+        width: 50%;
+    }
+    #connect {
+        width: 25%;
+    }
+    #contact {
+        width: 50%;
+        margin: 15px -6% 50px 10%;
+    }
+    #portfolio {
+        width: 50%;
+        margin: 15px -6% 60px 10%;
+    }
+    #portfolio li {
+        width: 45%;
+    }
+    #footer {
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 3px;
+    }
 }
