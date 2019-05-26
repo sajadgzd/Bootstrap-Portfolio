@@ -8,7 +8,6 @@ body {
     height: 100;
     width: 100%;
     color: #777777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     line-height: 200%;
     text-align: left;
     background-image: url("../images/concrete_seamless.png");
@@ -16,7 +15,7 @@ body {
 
 .masterhead {
     margin: 0 auto;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     width: 960px;
     background-color: #ffffff;
     height: 90px;
@@ -31,7 +30,6 @@ body {
 } */
 
 header {
-    /* float: left; */
     background-color: #4aaaa5;
     border-bottom: none;
     color: #ffffff;
@@ -76,7 +74,7 @@ a:hover {
 }
 
 .mastermain {
-    margin: 30px auto;
+    margin-left: 239px;
     width: 960px;
     height: auto;
     background-color: #ffffff;
@@ -99,9 +97,10 @@ textarea {
     clear: both;
     margin: 0 auto;
     width: auto;
-    height: 100vh;
+    height: auto;
     /* height: auto; */
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 footer {
