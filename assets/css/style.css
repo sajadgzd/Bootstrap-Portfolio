@@ -98,7 +98,7 @@ textarea {
 .mainrow {
     clear: both;
     margin: 0 auto;
-    width: 960px;
+    width: auto;
     height: 100vh;
     /* height: auto; */
     padding: 20px;
