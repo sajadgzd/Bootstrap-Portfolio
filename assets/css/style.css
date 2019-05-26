@@ -31,7 +31,7 @@ body {
 } */
 
 header {
-    float: left;
+    /* float: left; */
     background-color: #4aaaa5;
     border-bottom: none;
     color: #ffffff;
@@ -73,7 +73,7 @@ a:hover {
 .mastermain {
     margin: 30px auto;
     width: 960px;
-    height: 100vh;
+    height: auto;
     background-color: #ffffff;
     float: left;
     color: #777777;
@@ -95,6 +95,8 @@ textarea {
     margin: 0 auto;
     width: 960px;
     height: 100vh;
+    /* height: auto; */
+    padding: 20px;
 }
 
 footer {
@@ -161,12 +163,7 @@ footer {
     margin-bottom: 50px;
 }
 
-#main-bio {
-    height: auto;
-    padding: 20px;
-}
-
-#bio-image {
+.bio-img {
     clear: both;
     float: left;
     margin-right: 20px;
