@@ -141,7 +141,7 @@ footer {
     text-align: center;
 }
 
-.button {
+.btn {
     background-color: #4aaaa5;
     color: #ffffff;
     width: 100px;
@@ -152,7 +152,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.button:hover {
+.btn:hover {
     background-color: #334422;
 }
 
