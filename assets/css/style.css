@@ -60,10 +60,15 @@ h2 {
 }
 
 nav {
-    width: 270px;
-    float: right;
+    position: relative;
+    right: -250px;
     text-align: center;
     margin-top: 15px;
+    color: #4aaaa5;
+}
+
+a {
+    color: #777777;
 }
 
 a:hover {
