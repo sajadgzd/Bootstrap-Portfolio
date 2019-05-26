@@ -58,10 +58,15 @@ h2 {
 
 nav {
     position: relative;
-    right: -250px;
+    /* right: -250px; */
     text-align: center;
     margin-top: 15px;
     color: #4aaaa5;
+}
+
+.bar {
+    background-color: #ffffff;
+    border-bottom: 2px solid #cccccc;
 }
 
 a {
